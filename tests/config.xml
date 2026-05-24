@@ -1,0 +1,8 @@
+<test_configuration>
+    <product name="HomoGen"/>
+    <!--
+    	 
+    -->
+
+    <qa absolute_tol="0.002" relative_tol="0.002" mesher_options="" solver_options="" />
+</test_configuration>

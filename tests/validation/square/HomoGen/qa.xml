@@ -1,0 +1,16 @@
+<qa>
+    <!--
+    -->
+    <case input_file="square_export.json">
+        <comment>
+            square
+        </comment>
+        <mesher_test options="--surface" platform="all">
+            <text_compare output="square_mesh/square_mesh_qa.stats" gold="qa/square_mesh_qa.stats"/>
+        </mesher_test>
+        <solver_test options="-comp" platform="all">
+            <text_compare output="square_results/square_qa.json" gold="qa/square_results_qa.json"/>
+        </solver_test>
+    </case>
+
+</qa>

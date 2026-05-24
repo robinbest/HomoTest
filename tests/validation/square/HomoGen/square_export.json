@@ -1,0 +1,134 @@
+{
+    "Meta": {
+        "version": "1.1",
+        "date": "2026-04-20 16:27:02",
+        "project": "square"
+    },
+    "Meshing": {
+        "max_size": 0.0025,
+        "grading": 0.3,
+        "element_type": "Mixed triangle and quad",
+        "second_order": true
+    },
+    "BCS": {
+        "method": 0,
+        "lcs": "HomoLCS",
+        "analysis_type": "Elastic",
+        "dT": 0.0,
+        "curvature": [
+            0.0,
+            0.0,
+            0.0
+        ],
+        "recovery": {
+            "input_type": 1,
+            "translational": [
+                0.0,
+                0.3,
+                0.0
+            ],
+            "rotational": [
+                0.0,
+                0.0,
+                0.0
+            ]
+        }
+    },
+    "Geometry": {
+        "export_file": "geometry/square_geometry.step",
+        "bodies": [
+            {
+                "meta": {
+                    "name": "Face",
+                    "label": "square",
+                    "type": "Part::Feature"
+                },
+                "topology": {
+                    "nface": 1,
+                    "nedge": 4,
+                    "nnode": 4,
+                    "type": "Face",
+                    "area": 0.009999999999999938,
+                    "volume": 0.0
+                },
+                "assignments": {
+                    "Body": {
+                        "matbc": {
+                            "type": "None",
+                            "material": "validation_mat"
+                        }
+                    }
+                }
+            },
+            {
+                "meta": {
+                    "name": "HomoLCS",
+                    "label": "HomoLCS",
+                    "type": "PartDesign::CoordinateSystem"
+                },
+                "topology": {
+                    "nface": 1,
+                    "nedge": 0,
+                    "nnode": 0,
+                    "type": "Face",
+                    "area": 8e+100,
+                    "volume": 0.0
+                },
+                "assignments": {},
+                "csys": {
+                    "origin": [
+                        0.0,
+                        -0.0,
+                        0.0
+                    ],
+                    "xdir": [
+                        -2.220446049250313e-16,
+                        0.0,
+                        1.0
+                    ],
+                    "ydir": [
+                        0.0,
+                        1.0,
+                        0.0
+                    ],
+                    "zdir": [
+                        -1.0,
+                        0.0,
+                        -2.220446049250313e-16
+                    ]
+                }
+            }
+        ]
+    },
+    "Laminates": [],
+    "Materials": [
+        {
+            "CardName": "validation_mat",
+            "AuthorAndLicense": "All rights reserved",
+            "Author": "",
+            "License": "All rights reserved",
+            "Name": "validation_mat",
+            "Description": "",
+            "ReferenceSource": "",
+            "AngleOfFriction": "0 deg",
+            "BulkModulus": "0 kg/(mm*s^2)",
+            "CompressiveStrength": "0 kg/(mm*s^2)",
+            "Density": "8.96e-06 kg/mm^3",
+            "ElectricalConductivity": "0.05959 s^3*A^2/(mm^3*kg)",
+            "Father": "Metal",
+            "KindOfMaterial": "Copper",
+            "PoissonRatio": "0.2",
+            "RelativePermeability": "0.999994",
+            "ShearModulus": "0.04167 kg/(mm*s^2)",
+            "SpecificHeat": "3.85e+08 mm^2/(s^2*K)",
+            "Stiffness": "0 kg/s^2",
+            "ThermalConductivity": "398000 mm*kg/(s^3*K)",
+            "ThermalExpansionCoefficient": "1.65e-05 1/K",
+            "ThermalExpansionReferenceTemperature": "0 K",
+            "UltimateStrain": "0 kg/(mm*s^2)",
+            "UltimateTensileStrength": "210000 kg/(mm*s^2)",
+            "YieldStrength": "33300 kg/(mm*s^2)",
+            "YoungsModulus": "0.1 kg/(mm*s^2)"
+        }
+    ]
+}
