@@ -1,0 +1,329 @@
+{
+    "Meta": {
+        "version": "1.1",
+        "date": "2026-04-28 11:07:14",
+        "project": "box"
+    },
+    "Meshing": {
+        "max_size": 0.02,
+        "grading": 0.3,
+        "element_type": "Triangle",
+        "second_order": true
+    },
+    "BCS": {
+        "method": 0,
+        "lcs": "HomoLCS",
+        "analysis_type": "Elastic",
+        "dT": 0.0,
+        "curvature": [
+            0.0,
+            0.0,
+            0.0
+        ],
+        "recovery": null
+    },
+    "Geometry": {
+        "export_file": "geometry/box_geometry.step",
+        "bodies": [
+            {
+                "meta": {
+                    "name": "Part__Feature",
+                    "label": "Box",
+                    "type": "Part::Feature"
+                },
+                "topology": {
+                    "nface": 4,
+                    "nedge": 12,
+                    "nnode": 8,
+                    "type": "Shell",
+                    "area": 0.08538000002139315,
+                    "volume": 0.0
+                },
+                "assignments": {
+                    "Body": {},
+                    "Face1": {
+                        "bcs": {
+                            "laminate": "Laminate-lower",
+                            "lcs": "None/Inherit",
+                            "offset_starting_edge": "Auto"
+                        }
+                    },
+                    "Face2": {
+                        "bcs": {
+                            "laminate": "Laminate-left",
+                            "lcs": "None/Inherit",
+                            "offset_starting_edge": "Edge5"
+                        }
+                    },
+                    "Face3": {
+                        "bcs": {
+                            "laminate": "Laminate-right",
+                            "lcs": "None/Inherit",
+                            "offset_starting_edge": "Edge8"
+                        }
+                    },
+                    "Face4": {
+                        "bcs": {
+                            "laminate": "Laminate-upper",
+                            "lcs": "None/Inherit",
+                            "offset_starting_edge": "Auto"
+                        }
+                    }
+                }
+            },
+            {
+                "meta": {
+                    "name": "HomoLCS",
+                    "label": "HomoLCS",
+                    "type": "PartDesign::CoordinateSystem"
+                },
+                "topology": {
+                    "nface": 1,
+                    "nedge": 0,
+                    "nnode": 0,
+                    "type": "Face",
+                    "area": 8e+100,
+                    "volume": -6.816000000000001e+88
+                },
+                "assignments": {},
+                "csys": {
+                    "origin": [
+                        -2.14723e-11,
+                        -2.5555e-12,
+                        0.0
+                    ],
+                    "xdir": [
+                        0.0,
+                        -2.220446049250313e-16,
+                        1.0000000000000002
+                    ],
+                    "ydir": [
+                        1.0000000000000002,
+                        0.0,
+                        -2.220446049250313e-16
+                    ],
+                    "zdir": [
+                        -2.220446049250313e-16,
+                        1.0000000000000002,
+                        0.0
+                    ]
+                }
+            }
+        ]
+    },
+    "Laminates": [
+        {
+            "name": "Laminate-left",
+            "symmetric": false,
+            "plies": [
+                {
+                    "material": "box-mat",
+                    "thickness": 0.005,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": -15.0
+                },
+                {
+                    "material": "box-mat",
+                    "thickness": 0.005,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": -15.0
+                },
+                {
+                    "material": "box-mat",
+                    "thickness": 0.005,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": -15.0
+                },
+                {
+                    "material": "box-mat",
+                    "thickness": 0.005,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 15.0
+                },
+                {
+                    "material": "box-mat",
+                    "thickness": 0.005,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 15.0
+                },
+                {
+                    "material": "box-mat",
+                    "thickness": 0.005,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 15.0
+                }
+            ]
+        },
+        {
+            "name": "Laminate-right",
+            "symmetric": false,
+            "plies": [
+                {
+                    "material": "box-mat",
+                    "thickness": 0.005,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 15.0
+                },
+                {
+                    "material": "box-mat",
+                    "thickness": 0.005,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 15.0
+                },
+                {
+                    "material": "box-mat",
+                    "thickness": 0.005,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 15.0
+                },
+                {
+                    "material": "box-mat",
+                    "thickness": 0.005,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": -15.0
+                },
+                {
+                    "material": "box-mat",
+                    "thickness": 0.005,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": -15.0
+                },
+                {
+                    "material": "box-mat",
+                    "thickness": 0.005,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": -15.0
+                }
+            ]
+        },
+        {
+            "name": "Laminate-lower",
+            "symmetric": false,
+            "plies": [
+                {
+                    "material": "box-mat",
+                    "thickness": 0.005,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": -15.0
+                },
+                {
+                    "material": "box-mat",
+                    "thickness": 0.005,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": -15.0
+                },
+                {
+                    "material": "box-mat",
+                    "thickness": 0.005,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": -15.0
+                },
+                {
+                    "material": "box-mat",
+                    "thickness": 0.005,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 15.0
+                },
+                {
+                    "material": "box-mat",
+                    "thickness": 0.005,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 15.0
+                },
+                {
+                    "material": "box-mat",
+                    "thickness": 0.005,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 15.0
+                }
+            ]
+        },
+        {
+            "name": "Laminate-upper",
+            "symmetric": false,
+            "plies": [
+                {
+                    "material": "box-mat",
+                    "thickness": 0.005,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 15.0
+                },
+                {
+                    "material": "box-mat",
+                    "thickness": 0.005,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 15.0
+                },
+                {
+                    "material": "box-mat",
+                    "thickness": 0.005,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 15.0
+                },
+                {
+                    "material": "box-mat",
+                    "thickness": 0.005,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": -15.0
+                },
+                {
+                    "material": "box-mat",
+                    "thickness": 0.005,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": -15.0
+                },
+                {
+                    "material": "box-mat",
+                    "thickness": 0.005,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": -15.0
+                }
+            ]
+        }
+    ],
+    "Materials": [
+        {
+            "CardName": "box-mat",
+            "AuthorAndLicense": "All rights reserved",
+            "Author": "HomoGen",
+            "License": "All rights reserved",
+            "Name": "box-mat",
+            "Description": "",
+            "ReferenceSource": "",
+            "Density": "1.55e-06 kg/mm^3",
+            "PoissonRatioXY": "0.42",
+            "PoissonRatioXZ": "0.42",
+            "PoissonRatioYZ": "0.42",
+            "ShearModulusXY": "870 kg/(mm*s^2)",
+            "ShearModulusXZ": "870 kg/(mm*s^2)",
+            "ShearModulusYZ": "696 kg/(mm*s^2)",
+            "YoungsModulusX": "20590 kg/(mm*s^2)",
+            "YoungsModulusY": "1420 kg/(mm*s^2)",
+            "YoungsModulusZ": "1420 kg/(mm*s^2)"
+        }
+    ]
+}

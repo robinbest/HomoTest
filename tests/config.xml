@@ -1,7 +1,8 @@
 <test_configuration>
     <product name="HomoGen"/>
     <!--
-    	 
+    	python ..\scripts\HM_Tests.py -mesher C:\proj2\HomoGenFreeCAD\install\win64\bin\homo_mesher.exe
+          -solver C:\proj2\HomoGenFreeCAD\install\win64\bin\homo_solver.exe 
     -->
 
     <qa absolute_tol="0.002" relative_tol="0.002" mesher_options="--qa_stats" solver_options="" />
