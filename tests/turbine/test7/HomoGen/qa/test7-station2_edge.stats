@@ -1,0 +1,11 @@
+test7-station2 wire mesh
+
+General
+num nodes          : 8073
+num lines          : 0
+num quadratic lines: 4051
+
+total length       : 49272.205192
+smallest cell      : 0.242648
+largest  cell      : 18.212464
+
