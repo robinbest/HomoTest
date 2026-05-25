@@ -4,5 +4,5 @@
     	 
     -->
 
-    <qa absolute_tol="0.002" relative_tol="0.002" mesher_options="" solver_options="" />
+    <qa absolute_tol="0.002" relative_tol="0.002" mesher_options="--qa_stats" solver_options="" />
 </test_configuration>

@@ -429,7 +429,7 @@ def run_test_case(qaFile):
                 print("  ", atest.curr_job, " meshing test is skipped")
         elif mesherExe is not None:
             mesherOptions = global_conf.mesher_options + " " + atest.mesher_test.options
-            theCmd = mesherExe + " " + mesherOptions + " --input " + atest.curr_job
+            theCmd = mesherExe + " " + mesherOptions + " " + atest.curr_job
             t_start = datetime.now()
             mesh_successful = run_solver(theCmd)
             t_elapsed += datetime.now() - t_start
