@@ -1,0 +1,28 @@
+<qa>
+    <!--
+    -->
+    <case input_file="test8-shell_export.json">
+        <comment>
+            myBlade_Modified.yaml, station 1, 3 faces
+        </comment>
+        <mesher_test options="--surface --input" platform="all">
+            <text_compare output="test8-shell_mesh/test8-shell_edge.stats" gold="qa/test8-shell_edge.stats"/>
+        </mesher_test>
+        <solver_test options="--comp --input" platform="all">
+            <text_compare output="test8-shell_results/test8-shell_comp.json" gold="qa/test8-shell_comp.json"/>
+        </solver_test>
+    </case>
+
+    <case input_file="test8-station1_export.json">
+        <comment>
+            myBlade_Modified.yaml, station 1
+        </comment>
+        <mesher_test options="--surface --input" platform="all">
+            <text_compare output="test8-station1_mesh/test8-station1_edge.stats" gold="qa/test8-station1_edge.stats"/>
+        </mesher_test>
+        <solver_test options="--comp --input" platform="all">
+            <text_compare output="test8-station1_results/test8-station1_comp.json" gold="qa/test8-station1_comp.json"/>
+        </solver_test>
+    </case>
+
+</qa>

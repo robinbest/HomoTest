@@ -1,0 +1,11 @@
+test8-shell wire mesh
+
+General
+num nodes          : 1568
+num lines          : 1573
+num quadratic lines: 0
+
+total length       : 10058.627604
+smallest cell      : 0.240892
+largest  cell      : 7.750000
+
