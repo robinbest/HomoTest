@@ -1,0 +1,6 @@
+*_results/
+*_mesh/
+*.log
+*.FCBak
+*_FCStd/
+__pycache__/

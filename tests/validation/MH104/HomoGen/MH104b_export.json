@@ -1,0 +1,324 @@
+{
+    "Meta": {
+        "version": "1.11",
+        "date": "2026-05-26 13:25:42",
+        "project": "MH104b"
+    },
+    "Meshing": {
+        "max_size": 1.0,
+        "grading": 0.3,
+        "element_type": "Mixed",
+        "second_order": false
+    },
+    "BCS": {
+        "method": 0,
+        "lcs": "HomoLCS",
+        "comment": "",
+        "analysis_type": "Elastic",
+        "dT": 0.0,
+        "curvature": [
+            0.0,
+            0.0,
+            0.0
+        ],
+        "recovery": null
+    },
+    "Geometry": {
+        "export_file": "geometry/MH104b_geometry.step",
+        "bodies": [
+            {
+                "meta": {
+                    "name": "Part__Feature",
+                    "label": "MH104",
+                    "type": "Part::Feature"
+                },
+                "topology": {
+                    "nface": 24,
+                    "nedge": 74,
+                    "nnode": 55,
+                    "type": "Shell",
+                    "area": 3416.1872574104696,
+                    "volume": 0.0
+                },
+                "assignments": {
+                    "Body": {
+                        "matbc": {
+                            "type": "None",
+                            "material": "CFRP"
+                        }
+                    },
+                    "Face1": {
+                        "matbc": {
+                            "type": "None",
+                            "material": "ABS-Generic"
+                        }
+                    },
+                    "Face10": {
+                        "bcs": {
+                            "laminate": "Laminate-f4f10",
+                            "lcs": "None/Inherit",
+                            "offset_starting_edge": "Auto"
+                        }
+                    },
+                    "Face12": {
+                        "bcs": {
+                            "laminate": "Laminate-f12f24",
+                            "lcs": "None/Inherit",
+                            "offset_starting_edge": "Auto"
+                        }
+                    },
+                    "Face15": {
+                        "bcs": {
+                            "laminate": "Laminate-f12f24",
+                            "lcs": "None/Inherit",
+                            "offset_starting_edge": "Auto"
+                        }
+                    },
+                    "Face17": {
+                        "bcs": {
+                            "laminate": "Laminate-f12f24",
+                            "lcs": "None/Inherit",
+                            "offset_starting_edge": "Auto"
+                        }
+                    },
+                    "Face18": {
+                        "bcs": {
+                            "laminate": "Laminate-f12f24",
+                            "lcs": "None/Inherit",
+                            "offset_starting_edge": "Auto"
+                        }
+                    },
+                    "Face2": {
+                        "matbc": {
+                            "type": "None",
+                            "material": "ABS-Generic"
+                        }
+                    },
+                    "Face20": {
+                        "bcs": {
+                            "laminate": "Laminate-f12f24",
+                            "lcs": "None/Inherit",
+                            "offset_starting_edge": "Auto"
+                        }
+                    },
+                    "Face24": {
+                        "bcs": {
+                            "laminate": "Laminate-f12f24",
+                            "lcs": "None/Inherit",
+                            "offset_starting_edge": "Auto"
+                        }
+                    },
+                    "Face3": {
+                        "matbc": {
+                            "type": "None",
+                            "material": "ABS-Generic"
+                        }
+                    },
+                    "Face4": {
+                        "bcs": {
+                            "laminate": "Laminate-f4f10",
+                            "lcs": "None/Inherit",
+                            "offset_starting_edge": "Auto"
+                        }
+                    },
+                    "Face7": {
+                        "bcs": {
+                            "laminate": "Laminate-f7f9",
+                            "lcs": "None/Inherit",
+                            "offset_starting_edge": "Auto"
+                        }
+                    },
+                    "Face8": {
+                        "bcs": {
+                            "laminate": "Laminate-f12f24",
+                            "lcs": "None/Inherit",
+                            "offset_starting_edge": "Auto"
+                        }
+                    },
+                    "Face9": {
+                        "bcs": {
+                            "laminate": "Laminate-f7f9",
+                            "lcs": "None/Inherit",
+                            "offset_starting_edge": "Auto"
+                        }
+                    }
+                }
+            },
+            {
+                "meta": {
+                    "name": "HomoLCS",
+                    "label": "HomoLCS",
+                    "type": "PartDesign::CoordinateSystem"
+                },
+                "topology": {
+                    "nface": 1,
+                    "nedge": 0,
+                    "nnode": 0,
+                    "type": "Face",
+                    "area": 8e+100,
+                    "volume": -5.7333333333333325e+100
+                },
+                "assignments": {},
+                "csys": {
+                    "origin": [
+                        16.96,
+                        2.15,
+                        0.0
+                    ],
+                    "xdir": [
+                        0.0,
+                        -2.220446049250313e-16,
+                        -1.0000000000000002
+                    ],
+                    "ydir": [
+                        1.0000000000000002,
+                        0.0,
+                        2.220446049250313e-16
+                    ],
+                    "zdir": [
+                        2.220446049250313e-16,
+                        -1.0000000000000002,
+                        0.0
+                    ]
+                }
+            }
+        ]
+    },
+    "Laminates": [
+        {
+            "name": "Laminate-f12f24",
+            "symmetric": true,
+            "plies": [
+                {
+                    "material": "CFRP",
+                    "thickness": 0.23,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 0.0
+                },
+                {
+                    "material": "CFRP",
+                    "thickness": 0.23,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 45.0
+                },
+                {
+                    "material": "CFRP",
+                    "thickness": 0.23,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": -45.0
+                },
+                {
+                    "material": "CFRP",
+                    "thickness": 0.23,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 90.0
+                }
+            ]
+        },
+        {
+            "name": "Laminate-f7f9",
+            "symmetric": true,
+            "plies": [
+                {
+                    "material": "CFRP",
+                    "thickness": 0.1,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 0.0
+                },
+                {
+                    "material": "CFRP",
+                    "thickness": 0.1,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 45.0
+                },
+                {
+                    "material": "CFRP",
+                    "thickness": 0.1,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": -45.0
+                }
+            ]
+        },
+        {
+            "name": "Laminate-f4f10",
+            "symmetric": false,
+            "plies": [
+                {
+                    "material": "CFRP",
+                    "thickness": 0.1,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 0.0
+                },
+                {
+                    "material": "CFRP",
+                    "thickness": 0.1,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 45.0
+                },
+                {
+                    "material": "CFRP",
+                    "thickness": 0.1,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": -45.0
+                }
+            ]
+        }
+    ],
+    "Materials": [
+        {
+            "CardName": "ABS-Generic",
+            "AuthorAndLicense": "CC-BY-3.0",
+            "Author": "Juergen Riegel",
+            "License": "CC-BY-3.0",
+            "Name": "ABS-Generic",
+            "Description": "This is a blend AcrylnitrilButadienStyrol (ABS) material card. The values are at the low end of the spectrum. If you need a more precise material definition use the more specialised ABS-blend cards.",
+            "ReferenceSource": "",
+            "Density": "1.06e-06 kg/mm^3",
+            "Father": "Thermoplast",
+            "PoissonRatio": "0.37",
+            "SpecificHeat": "2.05e+09 mm^2/(s^2*K)",
+            "ThermalConductivity": "158 mm*kg/(s^3*K)",
+            "ThermalExpansionCoefficient": "9.3e-05 1/K",
+            "UltimateTensileStrength": "38800 kg/(mm*s^2)",
+            "YieldStrength": "44100 kg/(mm*s^2)",
+            "YoungsModulus": "2.3e+06 kg/(mm*s^2)"
+        },
+        {
+            "CardName": "CFRP",
+            "AuthorAndLicense": "CC-BY-3.0",
+            "Author": "HomoGen",
+            "License": "CC-BY-3.0",
+            "Name": "CFRP",
+            "Description": "Carbon-fiber reinforced polymer",
+            "ReferenceSource": "",
+            "Density": "1.55e-06 kg/mm^3",
+            "Father": "Composite",
+            "KindOfMaterial": "Composite",
+            "MaterialNumber": "Custom",
+            "PoissonRatioXY": "0.2748",
+            "PoissonRatioXZ": "0.2748",
+            "PoissonRatioYZ": "0.3683",
+            "ShearModulusXY": "4.054e+06 kg/(mm*s^2)",
+            "ShearModulusXZ": "4.054e+06 kg/(mm*s^2)",
+            "ShearModulusYZ": "3.2e+06 kg/(mm*s^2)",
+            "SpecificHeat": "1.8e+09 mm^2/(s^2*K)",
+            "StandardCode": "Custom",
+            "ThermalConductivity": "49200 mm*kg/(s^3*K)",
+            "ThermalExpansionCoefficient": "3.8e-05 1/K",
+            "ThermalExpansionReferenceTemperature": "273 K",
+            "YoungsModulusX": "9.3744e+07 kg/(mm*s^2)",
+            "YoungsModulusY": "1.243e+07 kg/(mm*s^2)",
+            "YoungsModulusZ": "1.243e+07 kg/(mm*s^2)"
+        }
+    ]
+}

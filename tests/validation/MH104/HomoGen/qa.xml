@@ -1,0 +1,16 @@
+<qa>
+    <!--
+    -->
+    <case input_file="MH104b_export.json">
+        <comment>
+            externally obtained geometry. 
+        </comment>
+        <mesher_test options="--surface --input" platform="all">
+            <text_compare output="MH104b_mesh/MH104b_edge.stats" gold="qa/MH104b_edge.stats"/>
+        </mesher_test>
+        <solver_test options="--comp --input" platform="all">
+            <text_compare output="MH104b_results/MH104b_comp.json" gold="qa/MH104b_comp.json"/>
+        </solver_test>
+    </case>
+
+</qa>
