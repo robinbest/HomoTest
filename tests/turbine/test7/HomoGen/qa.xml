@@ -1,0 +1,16 @@
+<qa>
+    <!--
+    -->
+    <case input_file="test7-station2_export.json">
+        <comment>
+            IEA-15-240-RWT.yaml, station 2
+        </comment>
+        <mesher_test options="--surface --input" platform="all">
+            <text_compare output="test7-station2_mesh/test7-station2_edge.stats" gold="qa/test7-station2_edge.stats"/>
+        </mesher_test>
+        <solver_test options="--comp --input" platform="all">
+            <text_compare output="test7-station2_results/test7-station2_comp.json" gold="qa/test7-station2_comp.json"/>
+        </solver_test>
+    </case>
+
+</qa>

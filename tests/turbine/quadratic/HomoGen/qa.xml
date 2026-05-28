@@ -1,0 +1,29 @@
+<qa>
+    <!--
+    -->
+    <case input_file="station015_export.json">
+        <comment>
+            MyBlade_modifed.yaml, test quadratic mesh
+        </comment>
+        <mesher_test options="--surface --input" platform="all">
+            <text_compare output="station015_mesh/station015_edge.stats" gold="qa/station015_edge.stats"/>
+        </mesher_test>
+        <solver_test options="--comp --input" platform="all">
+            <text_compare output="station015_results/station015_comp.json" gold="qa/station015_comp.json"/>
+        </solver_test>
+    </case>
+
+
+    <case input_file="station015_export.json">
+        <comment>
+            MyBlade_modifed.yaml, test --strict_max_size option for quadratic mesh
+        </comment>
+        <mesher_test options="--surface --strict_max_size --input" platform="all">
+            <text_compare output="station015_mesh/station015_edge.stats" gold="qa/station015max_edge.stats"/>
+        </mesher_test>
+        <solver_test options="--comp --input" platform="all">
+            <text_compare output="station015_results/station015_comp.json" gold="qa/station015max_comp.json"/>
+        </solver_test>
+    </case>
+
+</qa>

@@ -1,0 +1,445 @@
+{
+    "Meta": {
+        "version": "1.11",
+        "date": "2026-05-25 14:51:23",
+        "project": "test8-shell"
+    },
+    "Meshing": {
+        "max_size": 5.0,
+        "grading": 0.3,
+        "element_type": "Mixed",
+        "second_order": false
+    },
+    "BCS": {
+        "method": 0,
+        "lcs": "HomoLCS",
+        "comment": "",
+        "analysis_type": "Elastic",
+        "dT": 0.0,
+        "curvature": [
+            0.0,
+            0.0,
+            0.0
+        ],
+        "recovery": null
+    },
+    "Geometry": {
+        "export_file": "geometry/test8-shell_geometry.step",
+        "bodies": [
+            {
+                "meta": {
+                    "name": "Part__Feature",
+                    "label": "test8-station1",
+                    "type": "Part::Feature"
+                },
+                "topology": {
+                    "nface": 6,
+                    "nedge": 19,
+                    "nnode": 14,
+                    "type": "Shell",
+                    "area": 230156.6257917584,
+                    "volume": 0.0
+                },
+                "assignments": {
+                    "Body": {
+                        "matbc": {
+                            "type": "None",
+                            "material": "CFRP"
+                        }
+                    },
+                    "Face1": {},
+                    "Face2": {
+                        "bcs": {
+                            "laminate": "Laminate-44",
+                            "lcs": "None/Inherit",
+                            "offset_starting_edge": "Auto"
+                        }
+                    }
+                }
+            },
+            {
+                "meta": {
+                    "name": "HomoLCS",
+                    "label": "HomoLCS",
+                    "type": "PartDesign::CoordinateSystem"
+                },
+                "topology": {
+                    "nface": 1,
+                    "nedge": 0,
+                    "nnode": 0,
+                    "type": "Face",
+                    "area": 8e+100,
+                    "volume": -2.811581548762971e+103
+                },
+                "assignments": {},
+                "csys": {
+                    "origin": [
+                        -1204.8433747782449,
+                        -1054.3430807861141,
+                        0.0
+                    ],
+                    "xdir": [
+                        0.0,
+                        -2.220446049250313e-16,
+                        1.0000000000000002
+                    ],
+                    "ydir": [
+                        1.0000000000000002,
+                        0.0,
+                        -2.220446049250313e-16
+                    ],
+                    "zdir": [
+                        -2.220446049250313e-16,
+                        1.0000000000000002,
+                        0.0
+                    ]
+                }
+            }
+        ]
+    },
+    "Laminates": [
+        {
+            "name": "Laminate-44",
+            "symmetric": false,
+            "plies": [
+                {
+                    "material": "CFRP",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 0.0
+                },
+                {
+                    "material": "CFRP",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 45.0
+                },
+                {
+                    "material": "CFRP",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": -45.0
+                },
+                {
+                    "material": "CFRP",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 90.0
+                },
+                {
+                    "material": "CFRP",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 90.0
+                },
+                {
+                    "material": "CFRP",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 90.0
+                },
+                {
+                    "material": "CFRP",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 90.0
+                },
+                {
+                    "material": "CFRP",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 90.0
+                },
+                {
+                    "material": "CFRP",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 90.0
+                },
+                {
+                    "material": "CFRP",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 90.0
+                },
+                {
+                    "material": "CFRP",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 90.0
+                },
+                {
+                    "material": "CFRP",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 90.0
+                },
+                {
+                    "material": "CFRP",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 90.0
+                },
+                {
+                    "material": "CFRP",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 90.0
+                },
+                {
+                    "material": "CFRP",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 90.0
+                },
+                {
+                    "material": "CFRP",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 90.0
+                },
+                {
+                    "material": "CFRP",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 90.0
+                },
+                {
+                    "material": "CFRP",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 90.0
+                },
+                {
+                    "material": "CFRP",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 90.0
+                },
+                {
+                    "material": "CFRP",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 90.0
+                },
+                {
+                    "material": "CFRP",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 90.0
+                },
+                {
+                    "material": "CFRP",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 90.0
+                },
+                {
+                    "material": "CFRP",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 90.0
+                },
+                {
+                    "material": "CFRP",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 90.0
+                },
+                {
+                    "material": "CFRP",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 90.0
+                },
+                {
+                    "material": "CFRP",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 90.0
+                },
+                {
+                    "material": "CFRP",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 90.0
+                },
+                {
+                    "material": "CFRP",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 90.0
+                },
+                {
+                    "material": "CFRP",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 90.0
+                },
+                {
+                    "material": "CFRP",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 90.0
+                },
+                {
+                    "material": "CFRP",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 90.0
+                },
+                {
+                    "material": "CFRP",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 90.0
+                },
+                {
+                    "material": "CFRP",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 90.0
+                },
+                {
+                    "material": "CFRP",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 90.0
+                },
+                {
+                    "material": "CFRP",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 90.0
+                },
+                {
+                    "material": "CFRP",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 90.0
+                },
+                {
+                    "material": "CFRP",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 90.0
+                },
+                {
+                    "material": "CFRP",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 90.0
+                },
+                {
+                    "material": "CFRP",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 90.0
+                },
+                {
+                    "material": "CFRP",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 90.0
+                },
+                {
+                    "material": "CFRP",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 90.0
+                },
+                {
+                    "material": "CFRP",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 90.0
+                },
+                {
+                    "material": "CFRP",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 90.0
+                },
+                {
+                    "material": "CFRP",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 90.0
+                }
+            ]
+        }
+    ],
+    "Materials": [
+        {
+            "CardName": "CFRP",
+            "AuthorAndLicense": "CC-BY-3.0",
+            "Author": "HomoGen",
+            "License": "CC-BY-3.0",
+            "Name": "CFRP",
+            "Description": "Carbon-fiber reinforced polymer",
+            "ReferenceSource": "",
+            "Density": "1.55e-06 kg/mm^3",
+            "Father": "Composite",
+            "KindOfMaterial": "Composite",
+            "MaterialNumber": "Custom",
+            "PoissonRatioXY": "0.2748",
+            "PoissonRatioXZ": "0.2748",
+            "PoissonRatioYZ": "0.3683",
+            "ShearModulusXY": "4.054e+06 kg/(mm*s^2)",
+            "ShearModulusXZ": "4.054e+06 kg/(mm*s^2)",
+            "ShearModulusYZ": "3.2e+06 kg/(mm*s^2)",
+            "SpecificHeat": "1.8e+09 mm^2/(s^2*K)",
+            "StandardCode": "Custom",
+            "ThermalConductivity": "49200 mm*kg/(s^3*K)",
+            "ThermalExpansionCoefficient": "3.8e-05 1/K",
+            "ThermalExpansionReferenceTemperature": "273 K",
+            "YoungsModulusX": "9.3744e+07 kg/(mm*s^2)",
+            "YoungsModulusY": "1.243e+07 kg/(mm*s^2)",
+            "YoungsModulusZ": "1.243e+07 kg/(mm*s^2)"
+        }
+    ]
+}

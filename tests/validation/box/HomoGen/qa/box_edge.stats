@@ -1,0 +1,11 @@
+box wire mesh
+
+General
+num nodes          : 630
+num lines          : 0
+num quadratic lines: 317
+
+total length       : 5.861706
+smallest cell      : 0.00707105
+largest  cell      : 0.020259
+

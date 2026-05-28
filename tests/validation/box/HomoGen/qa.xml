@@ -1,0 +1,16 @@
+<qa>
+    <!--
+    -->
+    <case input_file="box_export.json">
+        <comment>
+            box case, mesher's --qa_stats is in config.xml
+        </comment>
+        <mesher_test options="--surface --input" platform="all">
+            <text_compare output="box_mesh/box_edge.stats" gold="qa/box_edge.stats"/>
+        </mesher_test>
+        <solver_test options="--comp --input" platform="all">
+            <text_compare output="box_results/box_comp.json" gold="qa/box_comp.json"/>
+        </solver_test>
+    </case>
+
+</qa>

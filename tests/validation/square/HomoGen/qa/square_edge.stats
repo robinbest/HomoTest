@@ -1,0 +1,11 @@
+square wire mesh
+
+General
+num nodes          : 320
+num lines          : 0
+num quadratic lines: 160
+
+total length       : 0.400000
+smallest cell      : 0.0025
+largest  cell      : 0.002500
+

@@ -1,0 +1,1462 @@
+{
+    "Meta": {
+        "version": "1.11",
+        "date": "2026-05-25 14:54:51",
+        "project": "test8-station1"
+    },
+    "Meshing": {
+        "max_size": 5.0,
+        "grading": 0.3,
+        "element_type": "Mixed",
+        "second_order": false
+    },
+    "BCS": {
+        "method": 0,
+        "lcs": "Station001_LCS",
+        "comment": "",
+        "analysis_type": "Elastic",
+        "dT": 0.0,
+        "curvature": [
+            0.0,
+            0.0,
+            0.0
+        ],
+        "recovery": null
+    },
+    "Geometry": {
+        "export_file": "geometry/test8-station1_geometry.step",
+        "bodies": [
+            {
+                "meta": {
+                    "name": "Station001_section",
+                    "label": "Station 001",
+                    "type": "Part::Feature"
+                },
+                "topology": {
+                    "nface": 29,
+                    "nedge": 85,
+                    "nnode": 56,
+                    "type": "Shell",
+                    "area": 1042569.2617452258,
+                    "volume": 0.0
+                },
+                "assignments": {
+                    "Face1": {
+                        "bcs": {
+                            "laminate": "Laminate004",
+                            "lcs": "None/Inherit",
+                            "offset_starting_edge": "Auto"
+                        }
+                    },
+                    "Face10": {
+                        "bcs": {
+                            "laminate": "Laminate007",
+                            "lcs": "None/Inherit",
+                            "offset_starting_edge": "Auto"
+                        }
+                    },
+                    "Face11": {
+                        "bcs": {
+                            "laminate": "Laminate007",
+                            "lcs": "None/Inherit",
+                            "offset_starting_edge": "Auto"
+                        }
+                    },
+                    "Face12": {
+                        "bcs": {
+                            "laminate": "Laminate005",
+                            "lcs": "None/Inherit",
+                            "offset_starting_edge": "Auto"
+                        }
+                    },
+                    "Face13": {
+                        "bcs": {
+                            "laminate": "Laminate005",
+                            "lcs": "None/Inherit",
+                            "offset_starting_edge": "Auto"
+                        }
+                    },
+                    "Face14": {
+                        "matbc": {
+                            "type": "None",
+                            "material": "Adhesive"
+                        }
+                    },
+                    "Face15": {
+                        "bcs": {
+                            "laminate": "Laminate006",
+                            "lcs": "None/Inherit",
+                            "offset_starting_edge": "Auto"
+                        }
+                    },
+                    "Face16": {
+                        "matbc": {
+                            "type": "None",
+                            "material": "Adhesive"
+                        }
+                    },
+                    "Face17": {
+                        "bcs": {
+                            "laminate": "Laminate005",
+                            "lcs": "None/Inherit",
+                            "offset_starting_edge": "Auto"
+                        }
+                    },
+                    "Face18": {
+                        "bcs": {
+                            "laminate": "Laminate005",
+                            "lcs": "None/Inherit",
+                            "offset_starting_edge": "Auto"
+                        }
+                    },
+                    "Face19": {
+                        "bcs": {
+                            "laminate": "Laminate008",
+                            "lcs": "None/Inherit",
+                            "offset_starting_edge": "Auto"
+                        }
+                    },
+                    "Face2": {
+                        "bcs": {
+                            "laminate": "Laminate004",
+                            "lcs": "None/Inherit",
+                            "offset_starting_edge": "Auto"
+                        }
+                    },
+                    "Face20": {
+                        "bcs": {
+                            "laminate": "Laminate008",
+                            "lcs": "None/Inherit",
+                            "offset_starting_edge": "Auto"
+                        }
+                    },
+                    "Face21": {
+                        "matbc": {
+                            "type": "None",
+                            "material": "Adhesive"
+                        }
+                    },
+                    "Face22": {
+                        "bcs": {
+                            "laminate": "Laminate009",
+                            "lcs": "None/Inherit",
+                            "offset_starting_edge": "Auto"
+                        }
+                    },
+                    "Face23": {
+                        "matbc": {
+                            "type": "None",
+                            "material": "Adhesive"
+                        }
+                    },
+                    "Face24": {
+                        "bcs": {
+                            "laminate": "Laminate008",
+                            "lcs": "None/Inherit",
+                            "offset_starting_edge": "Auto"
+                        }
+                    },
+                    "Face25": {
+                        "bcs": {
+                            "laminate": "Laminate008",
+                            "lcs": "None/Inherit",
+                            "offset_starting_edge": "Auto"
+                        }
+                    },
+                    "Face26": {
+                        "bcs": {
+                            "laminate": "Laminate008",
+                            "lcs": "None/Inherit",
+                            "offset_starting_edge": "Auto"
+                        }
+                    },
+                    "Face27": {
+                        "bcs": {
+                            "laminate": "Laminate005",
+                            "lcs": "None/Inherit",
+                            "offset_starting_edge": "Auto"
+                        }
+                    },
+                    "Face28": {
+                        "bcs": {
+                            "laminate": "Laminate008",
+                            "lcs": "None/Inherit",
+                            "offset_starting_edge": "Auto"
+                        }
+                    },
+                    "Face29": {
+                        "matbc": {
+                            "type": "None",
+                            "material": "Adhesive"
+                        }
+                    },
+                    "Face3": {
+                        "bcs": {
+                            "laminate": "Laminate004",
+                            "lcs": "None/Inherit",
+                            "offset_starting_edge": "Auto"
+                        }
+                    },
+                    "Face4": {
+                        "bcs": {
+                            "laminate": "Laminate004",
+                            "lcs": "None/Inherit",
+                            "offset_starting_edge": "Auto"
+                        }
+                    },
+                    "Face5": {
+                        "bcs": {
+                            "laminate": "Laminate004",
+                            "lcs": "None/Inherit",
+                            "offset_starting_edge": "Auto"
+                        }
+                    },
+                    "Face6": {
+                        "bcs": {
+                            "laminate": "Laminate007",
+                            "lcs": "None/Inherit",
+                            "offset_starting_edge": "Auto"
+                        }
+                    },
+                    "Face7": {
+                        "bcs": {
+                            "laminate": "Laminate007",
+                            "lcs": "None/Inherit",
+                            "offset_starting_edge": "Auto"
+                        }
+                    },
+                    "Face8": {
+                        "bcs": {
+                            "laminate": "Laminate007",
+                            "lcs": "None/Inherit",
+                            "offset_starting_edge": "Auto"
+                        }
+                    },
+                    "Face9": {
+                        "bcs": {
+                            "laminate": "Laminate007",
+                            "lcs": "None/Inherit",
+                            "offset_starting_edge": "Auto"
+                        }
+                    }
+                }
+            },
+            {
+                "meta": {
+                    "name": "Station001_LCS",
+                    "label": "Station001_LCS",
+                    "type": "PartDesign::CoordinateSystem"
+                },
+                "topology": {},
+                "assignments": {},
+                "csys": {
+                    "origin": [
+                        -2057.086205909146,
+                        691.2159879375206,
+                        0.0
+                    ],
+                    "xdir": [
+                        0.0,
+                        0.0,
+                        1.0
+                    ],
+                    "ydir": [
+                        0.9479173598114327,
+                        -0.31851637158570506,
+                        0.0
+                    ],
+                    "zdir": [
+                        0.31851637158570506,
+                        0.9479173598114327,
+                        0.0
+                    ]
+                }
+            }
+        ]
+    },
+    "Laminates": [
+        {
+            "name": "Laminate004",
+            "symmetric": false,
+            "plies": [
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 0.0
+                }
+            ]
+        },
+        {
+            "name": "Laminate005",
+            "symmetric": false,
+            "plies": [
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 0.0
+                }
+            ]
+        },
+        {
+            "name": "Laminate006",
+            "symmetric": false,
+            "plies": [
+                {
+                    "material": "glass_uni",
+                    "thickness": 5.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 0.0
+                },
+                {
+                    "material": "glass_uni",
+                    "thickness": 5.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": 0.0
+                }
+            ]
+        },
+        {
+            "name": "Laminate007",
+            "symmetric": false,
+            "plies": [
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": -0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": -0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": -0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": -0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": -0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": -0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": -0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": -0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": -0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": -0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": -0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": -0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": -0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": -0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": -0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": -0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": -0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": -0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": -0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": -0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": -0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": -0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": -0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": -0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": -0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": -0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": -0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": -0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": -0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": -0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": -0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": -0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": -0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": -0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": -0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": -0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": -0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": -0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": -0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": -0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": -0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": -0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": -0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": -0.0
+                }
+            ]
+        },
+        {
+            "name": "Laminate008",
+            "symmetric": false,
+            "plies": [
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": -0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": -0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": -0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": -0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": -0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": -0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": -0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": -0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": -0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": -0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": -0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": -0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": -0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": -0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": -0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": -0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": -0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": -0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": -0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": -0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": -0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": -0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": -0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": -0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": -0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": -0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": -0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": -0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": -0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": -0.0
+                },
+                {
+                    "material": "glass_triax",
+                    "thickness": 1.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": -0.0
+                }
+            ]
+        },
+        {
+            "name": "Laminate009",
+            "symmetric": false,
+            "plies": [
+                {
+                    "material": "glass_uni",
+                    "thickness": 5.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": -0.0
+                },
+                {
+                    "material": "glass_uni",
+                    "thickness": 5.0,
+                    "integration": 3,
+                    "csys": "None",
+                    "rotation": -0.0
+                }
+            ]
+        }
+    ],
+    "Materials": [
+        {
+            "CardName": "Adhesive",
+            "AuthorAndLicense": "Project-local",
+            "Author": "pyNuMAD",
+            "License": "Project-local",
+            "Name": "Adhesive",
+            "Description": "Project-local turbine material imported from YAML as 'Adhesive'",
+            "ReferenceSource": "",
+            "Father": "Generic",
+            "KindOfMaterial": "Solid",
+            "MaterialNumber": "Custom",
+            "StandardCode": "Custom",
+            "Density": "1.1e-06 kg/mm^3",
+            "YoungsModulus": "4560 kg/(mm*s^2)",
+            "ShearModulus": "1450 kg/(mm*s^2)",
+            "PoissonRatio": "0.3",
+            "ThermalExpansionCoefficient": "0 1/K",
+            "UltimateTensileStrength": "61510 kg/(mm*s^2)",
+            "UltimateCompressiveStrength": "65360 kg/(mm*s^2)",
+            "UltimateShearStrength": "36610 kg/(mm*s^2)"
+        },
+        {
+            "CardName": "glass_triax",
+            "AuthorAndLicense": "Project-local",
+            "Author": "pyNuMAD",
+            "License": "Project-local",
+            "Name": "glass_triax",
+            "Description": "Project-local turbine material imported from YAML as 'glass_triax'",
+            "ReferenceSource": "",
+            "Father": "Composite",
+            "KindOfMaterial": "Composite",
+            "MaterialNumber": "Custom",
+            "StandardCode": "Custom",
+            "Density": "1.94e-06 kg/mm^3",
+            "YoungsModulusX": "2.82114e+07 kg/(mm*s^2)",
+            "YoungsModulusY": "1.62388e+07 kg/(mm*s^2)",
+            "YoungsModulusZ": "1.58355e+07 kg/(mm*s^2)",
+            "ShearModulusXY": "8.24822e+06 kg/(mm*s^2)",
+            "ShearModulusXZ": "3.49124e+06 kg/(mm*s^2)",
+            "ShearModulusYZ": "3.49124e+06 kg/(mm*s^2)",
+            "PoissonRatioXY": "0.497511",
+            "PoissonRatioXZ": "0.18091",
+            "PoissonRatioYZ": "0.27481"
+        },
+        {
+            "CardName": "glass_uni",
+            "AuthorAndLicense": "Project-local",
+            "Author": "pyNuMAD",
+            "License": "Project-local",
+            "Name": "glass_uni",
+            "Description": "Project-local turbine material imported from YAML as 'glass_uni'",
+            "ReferenceSource": "",
+            "Father": "Composite",
+            "KindOfMaterial": "Composite",
+            "MaterialNumber": "Custom",
+            "StandardCode": "Custom",
+            "Density": "1.94e-06 kg/mm^3",
+            "YoungsModulusX": "4.37e+07 kg/(mm*s^2)",
+            "YoungsModulusY": "1.65e+07 kg/(mm*s^2)",
+            "YoungsModulusZ": "1.545e+07 kg/(mm*s^2)",
+            "ShearModulusXY": "3.265e+06 kg/(mm*s^2)",
+            "ShearModulusXZ": "3.495e+06 kg/(mm*s^2)",
+            "ShearModulusYZ": "3.48e+06 kg/(mm*s^2)",
+            "PoissonRatioXY": "0.262",
+            "PoissonRatioXZ": "0.264",
+            "PoissonRatioYZ": "0.35"
+        }
+    ]
+}

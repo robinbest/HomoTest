@@ -1,0 +1,11 @@
+test8-station1 wire mesh
+
+General
+num nodes          : 3983
+num lines          : 4012
+num quadratic lines: 0
+
+total length       : 43660.532781
+smallest cell      : 0.121849
+largest  cell      : 16.273446
+

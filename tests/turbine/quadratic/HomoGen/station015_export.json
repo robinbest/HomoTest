@@ -1,0 +1,122 @@
+{
+    "Meta": {
+        "version": "1.11",
+        "date": "2026-05-26 13:38:47",
+        "project": "station015"
+    },
+    "Meshing": {
+        "max_size": 5.0,
+        "grading": 0.3,
+        "element_type": "Mixed",
+        "second_order": true
+    },
+    "BCS": {
+        "method": 0,
+        "lcs": "HomoLCS",
+        "comment": "quadratic elements",
+        "analysis_type": "Elastic",
+        "dT": 0.0,
+        "curvature": [
+            0.0,
+            0.0,
+            0.0
+        ],
+        "recovery": null
+    },
+    "Geometry": {
+        "export_file": "geometry/station015_geometry.step",
+        "bodies": [
+            {
+                "meta": {
+                    "name": "Part__Feature",
+                    "label": "station015-shell",
+                    "type": "Part::Feature"
+                },
+                "topology": {
+                    "nface": 6,
+                    "nedge": 22,
+                    "nnode": 17,
+                    "type": "Shell",
+                    "area": 164927.8641204196,
+                    "volume": 0.0
+                },
+                "assignments": {
+                    "Body": {
+                        "matbc": {
+                            "type": "None",
+                            "material": "CFRP"
+                        }
+                    }
+                }
+            },
+            {
+                "meta": {
+                    "name": "HomoLCS",
+                    "label": "HomoLCS",
+                    "type": "PartDesign::CoordinateSystem"
+                },
+                "topology": {
+                    "nface": 1,
+                    "nedge": 0,
+                    "nnode": 0,
+                    "type": "Face",
+                    "area": 8e+100,
+                    "volume": 1.3996665892195243e+103
+                },
+                "assignments": {},
+                "csys": {
+                    "origin": [
+                        -1802.020087099338,
+                        524.8749709573216,
+                        0.0
+                    ],
+                    "xdir": [
+                        0.0,
+                        -2.220446049250313e-16,
+                        1.0000000000000002
+                    ],
+                    "ydir": [
+                        1.0000000000000002,
+                        0.0,
+                        -2.220446049250313e-16
+                    ],
+                    "zdir": [
+                        -2.220446049250313e-16,
+                        1.0000000000000002,
+                        0.0
+                    ]
+                }
+            }
+        ]
+    },
+    "Laminates": [],
+    "Materials": [
+        {
+            "CardName": "CFRP",
+            "AuthorAndLicense": "CC-BY-3.0",
+            "Author": "HomoGen",
+            "License": "CC-BY-3.0",
+            "Name": "CFRP",
+            "Description": "Carbon-fiber reinforced polymer",
+            "ReferenceSource": "",
+            "Density": "1.55e-06 kg/mm^3",
+            "Father": "Composite",
+            "KindOfMaterial": "Composite",
+            "MaterialNumber": "Custom",
+            "PoissonRatioXY": "0.2748",
+            "PoissonRatioXZ": "0.2748",
+            "PoissonRatioYZ": "0.3683",
+            "ShearModulusXY": "4.054e+06 kg/(mm*s^2)",
+            "ShearModulusXZ": "4.054e+06 kg/(mm*s^2)",
+            "ShearModulusYZ": "3.2e+06 kg/(mm*s^2)",
+            "SpecificHeat": "1.8e+09 mm^2/(s^2*K)",
+            "StandardCode": "Custom",
+            "ThermalConductivity": "49200 mm*kg/(s^3*K)",
+            "ThermalExpansionCoefficient": "3.8e-05 1/K",
+            "ThermalExpansionReferenceTemperature": "273 K",
+            "YoungsModulusX": "9.3744e+07 kg/(mm*s^2)",
+            "YoungsModulusY": "1.243e+07 kg/(mm*s^2)",
+            "YoungsModulusZ": "1.243e+07 kg/(mm*s^2)"
+        }
+    ]
+}

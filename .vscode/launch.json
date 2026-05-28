@@ -1,0 +1,24 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: HM_Tests win64",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/scripts/HM_Tests.py",
+            "cwd": "${workspaceFolder}/tests",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}/scripts${pathSeparator}${env:PYTHONPATH}"
+            },
+            "args": [
+                "-verbose",
+                "-mesher",
+                "C:\\proj2\\HomoGenFreeCAD\\install\\win64\\bin\\homo_mesher.exe",
+                "-solver",
+                "C:\\proj2\\HomoGenFreeCAD\\install\\win64\\bin\\homo_solver.exe"
+            ]
+        }
+    ]
+}
